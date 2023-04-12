@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+   <link rel="stylesheet" href="style/stylesheet.css">
+     <link rel="shortcut icon" href="image/Instagram_logo.png" type="image/x-icon" />
+     <title>Ramadan</title>
+   <style>
+    header{
+        background-color: #e4c0a4;
+    }
+
+    .donate_container{
+    background-color: rgb(231, 230, 230);
+}
+
+.donate_video{
+    padding: 0% 20% 0% 20%;
+    margin-bottom: 4%;
+}
+video{
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+.service_title{
+    display: flex;
+    justify-content: end;
+    margin-right: 3%;
+    margin-bottom: 2%;
+    font-size: 3vw;
+}
+.services_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    row-gap: 5%;
+    padding: 0% 3% 0% 3%;
+}
+
+.services{
+    background-color: burlywood;
+    color: white;
+    text-align: center;
+    border-radius: 15%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+}
+.services i{
+    padding-top: 10% ;
+    font-size: 2rem;
+}
+
+.donate_form{
+    display: flex;
+    justify-content: center;
+    padding: 5% 0%;
+}
+
+.personal-info{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 15px;
+    padding: 7%;
+    width: 50%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: white;
+}
+
+.icon_container{
+    display: flex;
+}
+
+.change_currency{
+    display: flex;
+    align-items: center;
+}
+
+.donation_amount{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-bottom: 3%;
+}
+
+.info{
+    display: grid;
+    gap: 4%;
+    grid-template-columns: 48% 48%;
+    row-gap: 10%;
+}
+
+.info :nth-child(3){
+    grid-column: 1/span 2;
+    margin-top: 2%;
+}
+
+.input input{
+    width: 100%;
+    height: 40px;
+    border: 1px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.donation_amount_lift{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    padding: 1% 0%;
+}
+
+.donation_amount_right{
+    display: grid;
+    align-self: center;
+}
+
+
+.amount_button{
+    font-size: small;
+    text-align: center;
+}
+
+.price{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: inherit;
+    justify-content: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.price1{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.small{
+    font-size: x-small;
+    line-height: 3;
+}
+
+.currency{
+    padding: 6%;
+    border: 1px solid black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: white;
+}
+
+.donation-ways{
+    display: flex;
+    justify-content: space-between;
+}
+
+.donate_icon{
+    font-size: 2rem;
+}
+
+.total{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0%;
+}
+
+.small1{
+    font-size: x-small;
+    line-height: 3;
+    margin-left: 2%;
+}
+
+.bold{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+donate_button{
+    border: rgba(0, 0, 0, 0.16) solid 1px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+
+@media (max-width: 600px){
+    .services_container{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 3%;
+    }
+    .donate_video{
+        padding: 0%;
+    }
+    .service_title{
+        font-size: 7vw;
+    }
+    .price{
+        display: flex;
+        border: 1px solid black;
+        height: inherit;
+        justify-content: center;
+        max-height: 40px;
+    }
+    .amount_button{
+        font-size: 2vw;
+    }
+}
+      
+   </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">Ramadan</a>
+        <div class="menu">
+            <div class="btn">
+                <i class="las la-times close-btn"></i>
+            </div>
+            <a href="index.html#home">الرئيسية</a>
+            <a href="index.html#donations">التبرعات</a>
+            <a href="index.html#lessons">الدروس الدينية</a>
+            <a href="index.html#food">وصفات رمضانية</a>
+            <a href="index.html#activities">الانشطة</a>
+            <a href="index.html#contact">تواصل معنا</a>
+        </div>
+        <div class="btn">
+            <i class="las la-bars menu-btn"></i>
+        </div>
+    </header>
+  
+    <div class="donate_container" style="margin-top:150px ;">
+        <div class="donate_video">
+            <video src="video/intentionboosting.mp4" controls loop autoplay></video>
+        </div>
+        <div class="service_main">
+            <div class="service_title">: تذهب التبرعات إلى</div>
+            <div class="services_container">
+                <div class="services">
+                    <i class="las la-first-aid"></i>
+                    <p>الصحة والتطعيم</p>
+                </div>
+                <div class="services">
+                    <i class="las la-graduation-cap"></i>
+                    <p>التعليم</p>
+                </div>
+                <div class="services">
+                    <i class="las la-home"></i>
+                    <p>ملاجئ للمشردين</p>
+                </div>
+                <div class="services">
+                    <i class="las la-tshirt"></i>
+                    <p>كسو المحتاجين</p>
+                </div>
+                <div class="services">
+                    <i class="las la-utensils"></i>
+                    <p>موائد الطعام</p>
+                </div>
+                <div class="services">
+                    <i class="las la-briefcase"></i>
+                    <p>تدريب مهني</p>
+                </div>
+            </div>
+        </div>
+        <div class="donate_form">
+            <div class="personal-info">
+                <div class="donation-ways">
+                    <div class="icon_container">
+                        <div class="donate_icon"><i class="lab la-cc-visa"></i></div>
+                        <div class="donate_icon"><i class="lab la-cc-mastercard"></i></div>
+                        <div class="donate_icon"><i class="lab la-cc-paypal"></i></div>
+                    </div>
+                    <div class="change_currency">
+                        <div class="currency">
+                            <i class="las la-caret-down">العملة</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="donation_amount">
+                    <div class="donation_amount_lift">
+                        <div class="price"><p class="small">د.أ</p><p>1</p></div>
+                        <div class="price"><p class="small">د.أ</p><p>5</p></div>
+                        <div class="price"><p class="small">د.أ</p><p>10</p></div>
+                        <div class="price"><p class="small">د.أ</p><p>20</p></div>
+                        <div class="price"><p class="small">د.أ</p><p>50</p></div>
+                        <div class="price1">--</div>
+                    </div>
+                    <div class="donation_amount_right">
+                        <div class="amount_button">
+                            <button>ادخل قيمة</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="input"><input type="text" placeholder="First name"></div>
+                    <div class="input"><input type="text" placeholder="Last name"></div>
+                    <div class="input"><input type="text" placeholder="Email Address"></div>
+                </div>
+                <div class="total">Total donation:<p class="small1">د.أ</p><p class="bold">1</p></div>
+                <div><button class="donate_button">donate</button></div>
+            </div>
+        </div>
+        <div class="poor_img">
+
+        </div>
+    </div>
+
+                            <footer >
+                                hello Footer
+                            </footer>
+
+                            <script type="text/javascript">
+    
+                                window.addEventListener("scroll",function(){
+                                    var header = document.querySelector("header");
+                                    header.classList.toggle('sticky',window.scrollY > 0);
+                                });
+                                
+                                var menu =document.querySelector('.menu');
+                                var menuBtn =document.querySelector('.menu-btn');
+                                var closeBtn =document.querySelector('.close-btn');
+                                
+                                menuBtn.addEventListener("click",() =>{
+                                    menu.classList.add('active');
+                                });
+                                
+                                closeBtn.addEventListener("click",() =>{
+                                    menu.classList.remove('active');
+                                });
+                                
+                                
+                                
+                                </script>
+</body>
+</html>
