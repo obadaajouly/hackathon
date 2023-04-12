@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+   <link rel="stylesheet" href="style/stylesheet.css">
+     <link rel="shortcut icon" href="image/Instagram_logo.png" type="image/x-icon" />
+     <title>Ramadan</title>
+   <style>
+    header{
+        background-color: #e4c0a4;
+    }
+    .contact-me {
+    padding: 50px;
+    background-color: #f7f7f7;
+  }
+  
+  .contact-me h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-me form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+ 
+  ul{
+    list-style-type:none;
+}
+
+  .contact-me label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-me input,
+  .contact-me textarea {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  
+  .contact-me textarea {
+    height: 150px;
+  }
+  
+  .contact-me button {
+    background-color: rgb(151, 136, 136);;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  
+  .contact-me button:hover {
+border: 3px solid black;
+  }
+ 
+  
+      
+   </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">Ramadan</a>
+        <div class="menu">
+            <div class="btn">
+                <i class="las la-times close-btn"></i>
+            </div>
+            <a href="index.html#home">الرئيسية</a>
+            <a href="index.html#donations">التبرعات</a>
+            <a href="index.html#lessons">الدروس الدينية</a>
+            <a href="index.html#food">وصفات رمضانية</a>
+            <a href="index.html#activities">الانشطة</a>
+            <a href="index.html#contact">تواصل معنا</a>
+        </div>
+        <div class="btn">
+            <i class="las la-bars menu-btn"></i>
+        </div>
+    </header>
+  
+    <section class="contact-me" style="margin-top: 100px;">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+      
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+                            <footer >
+                                hello Footer
+                            </footer>
+
+                            <script type="text/javascript">
+    
+                                window.addEventListener("scroll",function(){
+                                    var header = document.querySelector("header");
+                                    header.classList.toggle('sticky',window.scrollY > 0);
+                                });
+                                
+                                var menu =document.querySelector('.menu');
+                                var menuBtn =document.querySelector('.menu-btn');
+                                var closeBtn =document.querySelector('.close-btn');
+                                
+                                menuBtn.addEventListener("click",() =>{
+                                    menu.classList.add('active');
+                                });
+                                
+                                closeBtn.addEventListener("click",() =>{
+                                    menu.classList.remove('active');
+                                });
+                                
+                                
+                                
+                                </script>
+</body>
+</html>
